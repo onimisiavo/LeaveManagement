@@ -12,7 +12,7 @@ namespace LeaveManagement.Models
         [Required]
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public DetialsLeaveTypeVM LeaveType { get; set; } = default!;
+        public LeaveTypeVM LeaveType { get; set; } = default!;
         public int LeaveTypeId { get; set; }
         public IEnumerable<SelectListItem> LeaveTypes { get; set; } = default!;
         public DateTime DateRequested { get; set; }

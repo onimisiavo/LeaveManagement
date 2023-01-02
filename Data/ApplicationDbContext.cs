@@ -1,6 +1,7 @@
 ﻿using LeaveManagement.Data.Domains;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using LeaveManagement.Models;
 
 namespace LeaveManagement.Data
 {
@@ -15,5 +16,6 @@ namespace LeaveManagement.Data
         public DbSet<LeaveAllocation> LeaveAllocations => Set<LeaveAllocation>();
         public DbSet<LeaveType> LeaveTypes => Set<LeaveType>();
         public DbSet<LeaveHistory> LeaveHistories => Set<LeaveHistory>();
+        public DbSet<LeaveManagement.Models.LeaveTypeVM> LeaveTypeVM => Set<LeaveManagement.Models.LeaveTypeVM>();
     }
 }
